@@ -10,9 +10,11 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 - [Thallys Henriques Vilela](https://github.com/liscadoido)
 - [Walisson Fernandes Dias](https://github.com/Murynga)
 
+Link da imagem do Modelo-Conceitual: XXXX.
+
 ## Documentação
 
-### Usuário
+### Funções de Usuário
 
 Cadastrar novo usuário:
 
@@ -51,5 +53,5 @@ Body:
 
 - Outras interações que podem ser necessárias na sua aplicação:
 
-### Entidade 2(ve dps)
+### Funções de Entidade 2(ve dps)
 
