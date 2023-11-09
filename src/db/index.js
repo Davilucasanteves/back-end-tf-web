@@ -13,14 +13,14 @@ async function connect() {
     return pool.connect();
   }
 
-  async function selectUsuarios() {         // Mudar para o nome certo dps!!!
+  async function selectUsuarios() {         // Mudar para o nome certo dps!!!  Lista tudo de todos os usuários
     const client = await connect();
     const res = await client.query("SELECT * FROM usuario");
     return res.rows;
   }
 
   //bd.js
-async function selectUsuario(id) {
+async function selectUsuario(id) {          //Lista informações de somente um usuário
   const client = await connect();
   const query = "SELECT * FROM usuario WHERE id = $1";
   const usuario = [id];
@@ -29,7 +29,7 @@ async function selectUsuario(id) {
 }
 
 //bd.js
-async function insertUsuario(data) {
+async function insertUsuario(data) {         //cadastrar
     const client = await connect();
     const query = "INSERT INTO usuario (nome,senha,email) VALUES ($1,$2,$3) ";
     const usuario = [data.nome, data.senha, data.email];
@@ -37,14 +37,14 @@ async function insertUsuario(data) {
   }
   
   //bd.js
-  async function deleteUsuario(id) {
+  async function deleteUsuario(id) {      // exclui infos de um usuário identificado? é identificado memo?
     const client = await connect();
     const query = "DELETE FROM usuario WHERE id = $1";
     await client.query(query, [id]);
   }
   
   //bd.js
-  async function updateUsuario(data) {
+  async function updateUsuario(data) {            // alterar informaçõies de um usuário identificado? esse aqui é identificado memo?
     const client = await connect();
     const query =
       "UPDATE usuario SET nome = $1, email = $2, senha = $3 WHERE id = $4";

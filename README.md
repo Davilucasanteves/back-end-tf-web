@@ -14,7 +14,7 @@ Link da imagem do Modelo-Conceitual: XXXX.
 
 ## Documentação
 
-### Funções de Usuário
+### Funções de Usuário:
 
 Cadastrar novo usuário:
 
@@ -53,5 +53,5 @@ Body:
 
 - Outras interações que podem ser necessárias na sua aplicação:
 
-### Funções de Entidade 2(ve dps)
+### Funções de Entidade 2(ve dps):
 
