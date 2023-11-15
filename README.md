@@ -32,6 +32,9 @@ Body:
   "email": "email-usuario@email.com"
 }
 
+
+
+
 - Listar todos os usuários e as suas respectivas informações:
 
 Descrição: Lista todos os usuários e suas respectivas informações.
@@ -42,6 +45,9 @@ Tipo de requisição: GET
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
+
+
+
 - Listar as informações de apenas um usuário:
 
 Descrição: Lista as informações do usuário requisitado.
@@ -51,6 +57,9 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario
 Tipo de requisição: GET
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+
+
+
 
 - Alterar as informações de um usuário identificado:
 
@@ -68,6 +77,9 @@ Body:
   "email": "email_usuario@email.com"
 }
 
+
+
+
 - Excluir as informações de um usuário identificado:
 
 Descrição: Exclui as informações de um certo usuário.
@@ -77,6 +89,9 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario
 Tipo de requisição: DELETE
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+
+
+
 
 - Autenticar o usuário: 
 
@@ -88,7 +103,11 @@ Tipo de requisição: GET
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
+
 - Outras interações que podem ser necessárias na sua aplicação:
+
+
+
 
 ### - Funções de Admin:
 
@@ -107,6 +126,9 @@ Body:
   "email": "email-admin@email.com"
 }
 
+
+
+
 - Listar todos os admins e as suas respectivas informações:
 
 Descrição: Lista todos os admins e suas respectivas informações.
@@ -117,6 +139,9 @@ Tipo de requisição: GET
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
+
+
+
 - Listar as informações de apenas um admin:
 
 Descrição: Lista as informações de um certo admin.
@@ -126,6 +151,9 @@ Endpoint: https://back-end-tf-web.vercel.app/admin
 Tipo de requisição: GET
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+
+
+
 
 - Alterar as informações de um admin identificado:
 
@@ -143,6 +171,9 @@ Body:
   "email": "email_admin@email.com"
 }
 
+
+
+
 - Excluir as informações de um admin identificado:
 
 Descrição:  Exclui as informações de um certo admin.   //um admin pode excluir oto admin?
@@ -152,6 +183,9 @@ Endpoint: https://back-end-tf-web.vercel.app/admin
 Tipo de requisição: DELETE
 
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+
+
+
 
 - Autenticar o admin: 
 
@@ -164,6 +198,7 @@ Tipo de requisição: GET
 Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 que mais nois põe pu admin???
+
 
 - Outras interações que podem ser necessárias na sua aplicação:
 
