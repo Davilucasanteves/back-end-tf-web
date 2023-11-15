@@ -20,7 +20,7 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
 Descrição: Insere um novo usuário no banco de dados.
 
-Endpoint: 
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: Post
 
@@ -35,27 +35,27 @@ Body:
 
 Descrição: Lista todos os usuários e suas respectivas informações.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: GET
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Listar as informações de apenas um usuário:
 
 Descrição: Lista as informações do usuário requisitado.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: GET
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Alterar as informações de um usuário identificado:
 
 Descrição: Modifica informações de um usuário específico.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: PATCH
 
@@ -71,21 +71,21 @@ Body:
 
 Descrição: Exclui as informações de um certo usuário.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: DELETE
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Autenticar o usuário: 
 
 Descrição: Verifica se realmente é o usuário que está usando tal aplicação.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: GET
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Outras interações que podem ser necessárias na sua aplicação:
 
@@ -95,7 +95,7 @@ Body:
 
 Descrição: Insere um novo admin no banco de dados.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/admin         //não sei se é esse msm!
 
 Tipo de requisição: POST
 
@@ -110,27 +110,27 @@ Body:
 
 Descrição: Lista todos os admins e suas respectivas informações.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: GET
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Listar as informações de apenas um admin:
 
 Descrição: Lista as informações de um certo admin.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: GET
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Alterar as informações de um admin identificado:
 
 Descrição:  Modifica informações de um usuário específico.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: PATCH
 
@@ -146,17 +146,17 @@ Body:
 
 Descrição:  Exclui as informações de um certo admin.   //um admin pode excluir oto admin?
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: DELETE
 
-Body:
+Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
 
 - Autenticar o admin: 
 
 Descrição:  Verifica se realmente é o admin que está usando tal aplicação.
 
-Endpoint:
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: GET
 
