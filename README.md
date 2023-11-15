@@ -13,7 +13,7 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
 ## Documentação
 
-- [Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png)
+[Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png)
 
 ### - Funções de Usuário:
 
