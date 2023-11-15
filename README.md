@@ -10,12 +10,11 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 - [Thallys Henriques Vilela](https://github.com/liscadoido)
 - [Walisson Fernandes Dias](https://github.com/Murynga)
 
-<br>
 ## Documentação
-<br>
 
 [Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png)
-<br>
+
+
 ### - Funções de Usuário:
 
 - Cadastrar novo usuário:
