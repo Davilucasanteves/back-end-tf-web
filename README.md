@@ -21,7 +21,7 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
 Descrição: Insere um novo usuário no banco de dados.
 
-Endpoint: https://back-end-tf-web.vercel.app/usuarios
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: POST
 
@@ -118,7 +118,7 @@ Body: <só tem body se tiver o token! no caso de get e delete, post e patch já 
 
 Descrição: Insere um novo admin no banco de dados.
 
-Endpoint: https://back-end-tf-web.vercel.app/admins
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: POST
 
