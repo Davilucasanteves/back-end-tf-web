@@ -88,7 +88,10 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: DELETE
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body:
+{
+  "_id": 1
+}
 
 
 
@@ -182,7 +185,10 @@ Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: DELETE
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: 
+{
+  "_id": 1
+}
 
 
 
