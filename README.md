@@ -65,7 +65,7 @@ Body: <só tem body se tiver o token! no caso de get e delete, post e patch já 
 
 Descrição: Modifica informações de um usuário específico.
 
-Endpoint: https://back-end-tf-web.vercel.app/usuario
+Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: PATCH
 
@@ -84,7 +84,7 @@ Body:
 
 Descrição: Exclui as informações de um certo usuário.
 
-Endpoint: https://back-end-tf-web.vercel.app/usuario
+Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: DELETE
 
@@ -100,7 +100,7 @@ Body:
 
 Descrição: Verifica se realmente é o usuário que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/usuario
+Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: GET
 
@@ -162,7 +162,7 @@ Body: <só tem body se tiver o token! no caso de get e delete, post e patch já 
 
 Descrição:  Modifica informações de um usuário específico.
 
-Endpoint: https://back-end-tf-web.vercel.app/admin
+Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: PATCH
 
@@ -181,7 +181,7 @@ Body:
 
 Descrição:  Exclui as informações de um certo admin.   //um admin pode excluir oto admin?
 
-Endpoint: https://back-end-tf-web.vercel.app/admin
+Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: DELETE
 
@@ -197,7 +197,7 @@ Body:
 
 Descrição:  Verifica se realmente é o admin que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/admin
+Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: GET
 
