@@ -13,8 +13,8 @@ import {
 //src/routes/admin.js
 const router = Router();
 
-router.get("/admin", verificarAutenticacao, async (req, res) => {    //end points (router e app!)
-  console.log(`Rota GET /admin solicitada pelo admin ${req.userId}`); 
+router.get("/admins", verificarAutenticacao, async (req, res) => {    //end points (router e app!)
+  console.log(`Rota GET /admins solicitada pelo admin ${req.userId}`); 
   try {
     const admins = await selectAdmins();
     res.json(admins);

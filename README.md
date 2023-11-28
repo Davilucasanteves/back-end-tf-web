@@ -158,7 +158,7 @@ Body: nesse caso não há body
 
 - Alterar as informações de um admin identificado:
 
-Descrição:  Modifica informações de um usuário específico.
+Descrição:  Modifica informações de um admin específico.
 
 Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
@@ -177,7 +177,7 @@ Body:
 
 - Excluir as informações de um admin identificado:
 
-Descrição:  Exclui as informações de um certo admin.   //um admin pode excluir oto admin?
+Descrição:  Exclui as informações de um certo admin.  
 
 Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
