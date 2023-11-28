@@ -34,14 +34,14 @@ async function insertUsuario(data) {         //cadastrar
 }
 
 //bd.js
-async function deleteUsuario(id) {      // exclui infos de um usuário identificado? é identificado memo?
+async function deleteUsuario(id) {      // exclui infos de um usuário identificado
   const client = await connect();
   const query = "DELETE FROM usuario WHERE id = $1";
   await client.query(query, [id]);
 }
 
 //bd.js
-async function updateUsuario(data) {            // alterar informaçõies de um usuário identificado? esse aqui é identificado memo?
+async function updateUsuario(data) {            // alterar informaçõies de um usuário identificado
   const client = await connect();
   const query =
     "UPDATE usuario SET nome = $1, email = $2, senha = $3 WHERE id = $4";
@@ -85,14 +85,14 @@ async function insertAdmin(data) {         //cadastrar
 }
 
 //bd.js
-async function deleteAdmin(id) {      // exclui infos de um usuário identificado? é identificado memo?
+async function deleteAdmin(id) {      // exclui infos de um usuário identificado
   const client = await connect();
   const query = "DELETE FROM usuario WHERE id = $1";
   await client.query(query, [id]);
 }
 
 //bd.js
-async function updateAdmin(data) {            // alterar informaçõies de um usuário identificado? esse aqui é identificado memo?
+async function updateAdmin(data) {            // alterar informaçõies de um usuário identificado
   const client = await connect();
   const query =
     "UPDATE usuario SET nome = $1, email = $2, senha = $3 WHERE id = $4";

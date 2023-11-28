@@ -14,7 +14,7 @@ import {
 const router = Router();
 
 router.get("/admin", verificarAutenticacao, async (req, res) => {    //end points (router e app!)
-  console.log(`Rota GET /admin solicitada pelo admin ${req.userId}`); //esse userId muda?
+  console.log(`Rota GET /admin solicitada pelo admin ${req.userId}`);
   try {
     const admins = await selectAdmins();
     res.json(admins);
