@@ -100,7 +100,7 @@ Body:
 
 Descrição: Verifica se realmente é o usuário que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
+Endpoint: https://back-end-tf-web.vercel.app/login/
 
 Tipo de requisição: GET
 
@@ -195,7 +195,7 @@ Body:
 
 Descrição:  Verifica se realmente é o admin que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/admin/:id
+Endpoint: https://back-end-tf-web.vercel.app/login/
 
 Tipo de requisição: GET
 
