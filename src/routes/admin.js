@@ -14,7 +14,7 @@ import {
 const router = Router();
 
 router.get("/admin", verificarAutenticacao, async (req, res) => {    //end points (router e app!)
-  console.log(`Rota GET /admin solicitada pelo admin ${req.userId}`);
+  console.log(`Rota GET /admin solicitada pelo admin ${req.userId}`); 
   try {
     const admins = await selectAdmins();
     res.json(admins);
@@ -74,6 +74,7 @@ router.patch("/admin", verificarAutenticacao, async (req, res) => {
   }
 });
 
+/*
 router.get("/admins", verificarAutenticacao, async (req, res) => {
   console.log("Rota GET/admins solicitada");
   try {
@@ -83,5 +84,5 @@ router.get("/admins", verificarAutenticacao, async (req, res) => {
     res.status(error.status || 500).json({ message: error.message || "Erro!" });
   }
 });
-
+*/
 export default router;
