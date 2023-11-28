@@ -43,7 +43,7 @@ Endpoint: https://back-end-tf-web.vercel.app/usuarios
 
 Tipo de requisição: GET
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: nesse caso não há body
 
 
 
@@ -56,7 +56,7 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: GET
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: nesse caso não há body
 
 
 
@@ -104,12 +104,10 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: GET
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: nesse caso não há body
+
 
 ---
-- Outras interações que podem ser necessárias na sua aplicação:
----
-
 
 
 ### - Funções de Admin:
@@ -140,7 +138,7 @@ Endpoint: https://back-end-tf-web.vercel.app/admins
 
 Tipo de requisição: GET
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: nesse caso não há body
 
 
 
@@ -153,7 +151,7 @@ Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: GET
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: nesse caso não há body
 
 
 
@@ -201,12 +199,8 @@ Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: GET
 
-Body: <só tem body se tiver o token! no caso de get e delete, post e patch já tem>
+Body: nesse caso não há body
 
 
----
-que mais nois põe pu admin???
-
-- Outras interações que podem ser necessárias na sua aplicação:
 ---
 
