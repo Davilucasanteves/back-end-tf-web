@@ -1,4 +1,5 @@
 # back-end-tf-web
+cruzeiro campeão
 Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
 ## Integrantes
