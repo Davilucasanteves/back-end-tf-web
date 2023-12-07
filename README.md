@@ -10,14 +10,21 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 - [Thallys Henriques Vilela](https://github.com/liscadoido)
 - [Walisson Fernandes Dias](https://github.com/Murynga)
 
+
+## Ferramentas utilizadas
+
+Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a utilização de sua API, usamos o site "Neon.tech". 
+
 ## Documentação
 
 [Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png)
 
+/////////////////////////////////////////////////////
+<br/>
 
 ### - Funções de Usuário:
 
-- Cadastrar novo usuário:
+- **Cadastrar novo usuário**:
 
 Descrição: Insere um novo usuário no banco de dados.
 
@@ -32,10 +39,10 @@ Body:
   "email": "email-usuario@email.com"
 }
 
+<br/>
 
 
-
-- Listar todos os usuários e as suas respectivas informações:
+- **Listar todos os usuários e as suas respectivas informações**:
 
 Descrição: Lista todos os usuários e suas respectivas informações.
 
@@ -46,9 +53,9 @@ Tipo de requisição: GET
 Body: nesse caso não há body
 
 
+<br/>
 
-
-- Listar as informações de apenas um usuário:
+- **Listar as informações de apenas um usuário**:
 
 Descrição: Lista as informações do usuário requisitado.
 
@@ -59,13 +66,13 @@ Tipo de requisição: GET
 Body: nesse caso não há body
 
 
+<br/>
 
-
-- Alterar as informações de um usuário identificado:
+- **Alterar as informações de um usuário identificado**:
 
 Descrição: Modifica informações de um usuário específico.
 
-Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
+Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: PATCH
 
@@ -77,10 +84,10 @@ Body:
   "email": "email_usuario@email.com"
 }
 
+<br/>
 
 
-
-- Excluir as informações de um usuário identificado:
+- **Excluir as informações de um usuário identificado**:
 
 Descrição: Exclui as informações de um certo usuário.
 
@@ -94,25 +101,27 @@ Body:
 }
 
 
+<br/>
 
-
-- Autenticar o usuário: 
+- **Autenticar o usuário**: 
 
 Descrição: Verifica se realmente é o usuário que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/login/
+Endpoint: https://back-end-tf-web.vercel.app/login
 
-Tipo de requisição: GET
+Tipo de requisição: POST
 
 Body: nesse caso não há body
 
+<br/>
 
 ---
 
+<br/>
 
 ### - Funções de Admin:
 
-- Cadastrar novo admin:
+- **Cadastrar novo admin**:
 
 Descrição: Insere um novo admin no banco de dados.
 
@@ -127,10 +136,10 @@ Body:
   "email": "email-admin@email.com"
 }
 
+<br/>
 
 
-
-- Listar todos os admins e as suas respectivas informações:
+- **Listar todos os admins e as suas respectivas informações**:
 
 Descrição: Lista todos os admins e suas respectivas informações.
 
@@ -140,10 +149,10 @@ Tipo de requisição: GET
 
 Body: nesse caso não há body
 
+<br/>
 
 
-
-- Listar as informações de apenas um admin:
+- **Listar as informações de apenas um admin**:
 
 Descrição: Lista as informações de um certo admin.
 
@@ -153,14 +162,14 @@ Tipo de requisição: GET
 
 Body: nesse caso não há body
 
+<br/>
 
 
-
-- Alterar as informações de um admin identificado:
+- **Alterar as informações de um admin identificado**:
 
 Descrição:  Modifica informações de um admin específico.
 
-Endpoint: https://back-end-tf-web.vercel.app/admin/:id
+Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: PATCH
 
@@ -173,9 +182,9 @@ Body:
 }
 
 
+<br/>
 
-
-- Excluir as informações de um admin identificado:
+- **Excluir as informações de um admin identificado**:
 
 Descrição:  Exclui as informações de um certo admin.  
 
@@ -189,15 +198,15 @@ Body:
 }
 
 
+<br/>
 
-
-- Autenticar o admin: 
+- **Autenticar o admin**: 
 
 Descrição:  Verifica se realmente é o admin que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/login/
+Endpoint: https://back-end-tf-web.vercel.app/login
 
-Tipo de requisição: GET
+Tipo de requisição: POST
 
 Body: nesse caso não há body
 
