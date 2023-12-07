@@ -51,6 +51,8 @@ Endpoint: https://back-end-tf-web.vercel.app/usuarios
 
 Tipo de requisição: GET
 
+Observações: É necessário token de acesso via header (x-access-token)
+
 Body: nesse caso não há body
 
 
@@ -64,6 +66,8 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: GET
 
+Observações: É necessário token de acesso via header (x-access-token)
+
 Body: nesse caso não há body
 
 
@@ -76,6 +80,8 @@ Descrição: Modifica informações de um usuário específico.
 Endpoint: https://back-end-tf-web.vercel.app/usuario
 
 Tipo de requisição: PATCH
+
+Observações: É necessário token de acesso via header (x-access-token)
 
 Body:
 {
@@ -96,11 +102,9 @@ Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
 
 Tipo de requisição: DELETE
 
-Body:
-{
-  "_id": 1
-}
+Observações: É necessário token de acesso via header (x-access-token)
 
+Body: não há body nesse caso.
 
 <br/>
 
@@ -112,7 +116,13 @@ Endpoint: https://back-end-tf-web.vercel.app/login
 
 Tipo de requisição: POST
 
-Body: nesse caso não há body
+Observações: É necessário que o usuário esteja cadastrado.
+
+Body: 
+{
+  "senha": "888",
+  "email": "davi@email.com"
+}
 
 <br/>
 
@@ -148,6 +158,8 @@ Endpoint: https://back-end-tf-web.vercel.app/admins
 
 Tipo de requisição: GET
 
+Observações: É necessário token de acesso via header (x-access-token)
+
 Body: nesse caso não há body
 
 <br/>
@@ -160,6 +172,8 @@ Descrição: Lista as informações de um certo admin.
 Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: GET
+
+Observações: É necessário token de acesso via header (x-access-token)
 
 Body: nesse caso não há body
 
@@ -174,6 +188,8 @@ Endpoint: https://back-end-tf-web.vercel.app/admin
 
 Tipo de requisição: PATCH
 
+Observações: É necessário token de acesso via header (x-access-token)
+
 Body:
 {
   "id": 1,
@@ -181,7 +197,6 @@ Body:
   "senha": "***",
   "email": "email_admin@email.com"
 }
-
 
 <br/>
 
@@ -193,10 +208,9 @@ Endpoint: https://back-end-tf-web.vercel.app/admin/:id
 
 Tipo de requisição: DELETE
 
-Body: 
-{
-  "_id": 1
-}
+Observações: É necessário token de acesso via header (x-access-token)
+
+Body: não hpa body nesse caso.
 
 
 <br/>
@@ -209,7 +223,13 @@ Endpoint: https://back-end-tf-web.vercel.app/login
 
 Tipo de requisição: POST
 
-Body: nesse caso não há body
+Observações: É necessário que o usuário esteja cadastrado.
+
+Body: 
+{
+  "senha": "888",
+  "email": "davi@email.com"
+}
 
 
 ---
