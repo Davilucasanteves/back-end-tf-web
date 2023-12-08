@@ -20,15 +20,15 @@ Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a 
 
 **Links**
 
-[Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png)
-[Link da imagem do Modelo-Lógico](XXXXX)
-[Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)
-[Link do narquivo DML](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DML.sql)
+[Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png) <br/>
+[Link da imagem do Modelo-Lógico](XXXXX)<br/>
+[Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)<br/>
+[Link do arquivo DML](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DML.sql)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 <br/>
 
-**Funções de cada entidade**
+### Funções de cada entidade
 
 ### - Funções de Usuário:
 
