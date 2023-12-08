@@ -2,6 +2,11 @@
 
 Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
+Questões a serem vistas: 
+table de partida deu systex error;
+não esquece de por os dados de acesso para cada tipo de usuario ao entregar o back-end final no classroom(admin, usuario);
+modelo-lógico e concertar conceitual;
+
 ## Integrantes
 
 - [Daví Lucas Antunes Neves](https://github.com/Davilucasanteves)
