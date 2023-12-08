@@ -238,6 +238,46 @@ Body:
   "email": "d@email.com"
 }
 
+<br/>
 
 ---
 
+<br/>
+
+### - Funções de Partida:
+
+**URL API: https://back-end-tf-web.vercel.app**
+
+- **Cadastrar uma nova partida**:
+
+[POST] /partida
+
+Descrição: Cadastra uma nova partida.
+
+Body:
+{
+  "quantidadeDeRodadas": "XXX",
+  "vencedor": "XXX"
+}
+
+<br/>
+
+- **Requisitar informações de uma partida**:
+
+
+
+<br/>
+
+- **Deletar uma partida**:
+
+
+
+<br/>
+
+- **Atualizar dados de uma partida**: obs: esse é caso os dadaos da partida sejam armazenas no bd durante a partida;
+
+
+
+<br/>
+
+---
