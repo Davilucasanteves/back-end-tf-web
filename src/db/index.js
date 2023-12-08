@@ -61,51 +61,51 @@ async function autenticarUsuario(email, senha) {
 
 //Admin-->
 
-async function selectAdmins() {         // Lista tudo de todos os usuários
+async function selectAdmins() {         // Lista tudo de todos os admins
   const client = await connect();
-  const res = await client.query("SELECT * FROM usuario");
+  const res = await client.query("SELECT * FROM admin");
   return res.rows;
 }
 
 //bd.js
-async function selectAdmin(id) {          //Lista informações de somente um usuário
+async function selectAdmin(id) {          //Lista informações de somente um admin
   const client = await connect();
-  const query = "SELECT * FROM usuario WHERE id = $1";
-  const usuario = [id];
-  const res = await client.query(query, usuario);
+  const query = "SELECT * FROM admin WHERE id = $1";
+  const admin = [id];
+  const res = await client.query(query, admin);
   return res.rows;
 }
 
 //bd.js
 async function insertAdmin(data) {         //cadastrar
   const client = await connect();
-  const query = "INSERT INTO usuario (nome,senha,email) VALUES ($1,$2,$3) ";
-  const usuario = [data.nome, data.senha, data.email];
-  await client.query(query, usuario);
+  const query = "INSERT INTO admin (nome,senha,email) VALUES ($1,$2,$3) ";
+  const admin = [data.nome, data.senha, data.email];
+  await client.query(query, admin);
 }
 
 //bd.js
-async function deleteAdmin(id) {      // exclui infos de um usuário identificado
+async function deleteAdmin(id) {      // exclui infos de um admin identificado
   const client = await connect();
-  const query = "DELETE FROM usuario WHERE id = $1";
+  const query = "DELETE FROM admin WHERE id = $1";
   await client.query(query, [id]);
 }
 
 //bd.js
-async function updateAdmin(data) {            // alterar informaçõies de um usuário identificado
+async function updateAdmin(data) {            // alterar informaçõies de um admin identificado
   const client = await connect();
   const query =
-    "UPDATE usuario SET nome = $1, email = $2, senha = $3 WHERE id = $4";
-  const usuario = [data.nome, data.email, data.senha, data.id];
-  await client.query(query, usuario);
+    "UPDATE admin SET nome = $1, email = $2, senha = $3 WHERE id = $4";
+  const admin = [data.nome, data.email, data.senha, data.id];
+  await client.query(query, admin);
 }
 
 // src/db/index.js
 async function autenticarAdmin(email, senha) {
   const client = await connect();
-  const query = "SELECT * FROM usuario WHERE email = $1 AND senha = $2";
-  const usuario = [email, senha];
-  const res = await client.query(query, usuario);
+  const query = "SELECT * FROM admin WHERE email = $1 AND senha = $2";
+  const admin = [email, senha];
+  const res = await client.query(query, admin);
   return res.rows[0];
 }
 

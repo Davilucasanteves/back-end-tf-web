@@ -35,9 +35,9 @@ Tipo de requisição: POST
 
 Body:
 {
-  "nome": "Nome do usuário",
-  "senha": "***",
-  "email": "email-usuario@email.com"
+  "nome": "Fulano",
+  "senha": "111",
+  "email": "f@email.com"
 }
 
 <br/>
@@ -86,9 +86,9 @@ Observações: É necessário token de acesso via header (x-access-token)
 Body:
 {
   "id": 1,
-  "nome": "Nome do usuário",
-  "senha": "***",
-  "email": "email_usuario@email.com"
+  "nome": "Fulano",
+  "senha": "111",
+  "email": "f@email.com"
 }
 
 <br/>
@@ -120,8 +120,8 @@ Observações: É necessário que o usuário esteja cadastrado.
 
 Body: 
 {
-  "senha": "888",
-  "email": "davi@email.com"
+  "senha": "111",
+  "email": "f@email.com"
 }
 
 <br/>
@@ -142,9 +142,9 @@ Tipo de requisição: POST
 
 Body:
 {
-  "nome": "Nome do admin",
-  "senha": "***",
-  "email": "email-admin@email.com"
+  "nome": "Davi",
+  "senha": "888",
+  "email": "d@email.com"
 }
 
 <br/>
@@ -193,9 +193,9 @@ Observações: É necessário token de acesso via header (x-access-token)
 Body:
 {
   "id": 1,
-  "nome": "Nome do admin",
-  "senha": "***",
-  "email": "email_admin@email.com"
+  "nome": "Davi",
+  "senha": "888",
+  "email": "d@email.com"
 }
 
 <br/>
@@ -228,7 +228,7 @@ Observações: É necessário que o usuário esteja cadastrado.
 Body: 
 {
   "senha": "888",
-  "email": "davi@email.com"
+  "email": "d@email.com"
 }
 
 
