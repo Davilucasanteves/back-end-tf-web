@@ -5,7 +5,7 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 Questões a serem vistas: 
 table de partida deu systex error;
 não esquece de por os dados de acesso para cada tipo de usuario ao entregar o back-end final no classroom(admin, usuario);
-modelo-lógico e concertar conceitual;
+modelo-lógico e consertar conceitual;
 
 ## Integrantes
 
@@ -27,8 +27,7 @@ Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a 
 
 [Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png) <br/>
 [Link da imagem do Modelo-Lógico](XXXXX)<br/>
-[Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)<br/>
-[Link do arquivo DML](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DML.sql)
+[Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 <br/>
@@ -222,7 +221,7 @@ Tipo de requisição: DELETE
 
 Observações: É necessário token de acesso via header (x-access-token)
 
-Body: não hpa body nesse caso.
+Body: não há body nesse caso.
 
 
 <br/>
@@ -267,21 +266,49 @@ Body:
 
 <br/>
 
+- **Requisitar informações de todas as partidas**:
+
+[GET] /partidas
+
+Descrição: Requisita dados de todas as partidas.
+
+Body: não há body nesse caso.
+
+<br/>
+
 - **Requisitar informações de uma partida**:
 
+[GET] /partida/:id
 
+Descrição: Requisita dados de um única partida.
+
+Body: não há body nesse caso.
 
 <br/>
 
 - **Deletar uma partida**:
 
+[DELETE] /partida/:id
 
+Descrição: Deleta uma partida.
+
+Body: não há body nesse caso.
 
 <br/>
 
-- **Atualizar dados de uma partida**: obs: esse é caso os dadaos da partida sejam armazenas no bd durante a partida;
+- **Atualizar dados de uma partida**:
 
+[PATCH] /partida
 
+Descrição: Modifica dados de uma partida.
+OBS: ele é em caso de os dadaos da partida serem armazenados no bd durante a partida.
+
+Body:
+{
+  "id": "1",
+  "quantidadeDeRodadas": "XXX",
+  "vencedor": "XXX"
+}
 
 <br/>
 
