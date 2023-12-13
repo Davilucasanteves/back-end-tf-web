@@ -5,7 +5,6 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 **Questões a serem vistas:**
 perguntar arthur sobre o patch de partida, ver os XXXX;
 User no router de partida, tem?
-ver linha amarela no index de db;
 
 table de partida deu systex error;
 
