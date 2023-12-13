@@ -2,10 +2,17 @@
 
 Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
-Questões a serem vistas: 
+**Questões a serem vistas:**
+perguntar arthur sobre o patch de partida, ver os XXXX;
+User no router de partida, tem?
+ver linha amarela no index de db;
+
 table de partida deu systex error;
-não esquece de por os dados de acesso para cada tipo de usuario ao entregar o back-end final no classroom(admin, usuario);
+
+Não esquece de por os dados de acesso para cada tipo de usuario ao entregar o back-end final no classroom(admin, usuario);
 modelo-lógico e consertar conceitual;
+
+Toda vez que for adicionar uma nova entidade no backend deve-se modificar o db/index.js e adicionar ela no /routes e por no index de src;
 
 ## Integrantes
 
@@ -301,7 +308,7 @@ Body: não há body nesse caso.
 [PATCH] /partida
 
 Descrição: Modifica dados de uma partida.
-OBS: ele é em caso de os dadaos da partida serem armazenados no bd durante a partida.
+OBS: ele é em caso de os dados da partida serem armazenados no bd durante a partida.
 
 Body:
 {

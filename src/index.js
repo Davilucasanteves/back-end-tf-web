@@ -2,6 +2,7 @@ import express from "express";      // Requisição do pacote do express
 import dotenv from "dotenv";
 import roteadorUsuario from "./routes/usuario.js"; //importa router
 import roteadorAdmin from "./routes/admin.js"; //importa router
+import roteadorPartida from "./routes/partida.js"; //importa router
 import roteadorLogin from "./routes/login.js";
 
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(express.json());
 
 app.use(roteadorUsuario);
 app.use(roteadorAdmin);
+app.use(roteadorPartida);
 app.use(roteadorLogin);
 
 app.get("/", (req, res) => {

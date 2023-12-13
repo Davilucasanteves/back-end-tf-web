@@ -61,6 +61,7 @@ async function autenticarUsuario(email, senha) {
 
 //Admin-->
 
+
 async function selectAdmins() {         // Lista tudo de todos os admins
   const client = await connect();
   const res = await client.query("SELECT * FROM admin");
@@ -109,4 +110,47 @@ async function autenticarAdmin(email, senha) {
   return res.rows[0];
 }
 
-export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario, selectAdmins, selectAdmin, insertAdmin, deleteAdmin, updateAdmin, autenticarAdmin };
+
+//Partida-->
+
+
+async function selectPartidas() {         
+  const client = await connect();
+  const res = await client.query("SELECT * FROM partida");
+  return res.rows;
+}
+
+//bd.js
+async function selectPartida(id) {          
+  const client = await connect();
+  const query = "SELECT * FROM partida WHERE id = $1";
+  const partida = [id];
+  const res = await client.query(query, partida);
+  return res.rows;
+}
+
+//bd.js
+async function insertPartida(data) {         //cadastrar
+  const client = await connect();
+  const query = "INSERT INTO partida (quantidadeDeRodadas, vencedor) VALUES ($1,$2) ";
+  const partida = [data.quantidadeDeRodadas, data.vencedor];
+  await client.query(query, partida);
+}
+
+//bd.js
+async function deletePartida(id) {      
+  const client = await connect();
+  const query = "DELETE FROM partida WHERE id = $1";
+  await client.query(query, [id]);
+}
+
+//bd.js
+async function updatePartida(data) {            
+  const client = await connect();
+  const query =
+    "UPDATE partida SET quantidadeDeRodadas = $1, vencedor = $2 WHERE id = $3";
+  const partida = [data.quantidadeDeRodadas, data.vencedor, data.id];
+  await client.query(query, partida);
+}
+
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario, selectAdmins, selectAdmin, insertAdmin, deleteAdmin, updateAdmin, autenticarAdmin,selectPartidas, selectPartida, insertPartida, deletePartida, updatePartida };
