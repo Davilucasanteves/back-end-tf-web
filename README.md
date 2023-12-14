@@ -22,7 +22,7 @@ Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a 
 
 [Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png) <br/>
 [Link da imagem do Modelo-Lógico](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-L%C3%B3gico.jpeg)<br/>
-[Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)
+[Link do arquivo DDL(Modelo-Físico)](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 <br/>
