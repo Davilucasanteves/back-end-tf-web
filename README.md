@@ -4,7 +4,9 @@ Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
 **Questões a serem vistas:**
 perguntar arthur sobre o patch de partida, ver os XXXX;
+foreignkey(id usuario) deve ser uma entidade?
 User no router de partida, tem?
+
 
 table de partida deu systex error;
 
@@ -31,8 +33,8 @@ Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a 
 
 **Links**
 
-[Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png) <br/>
-[Link da imagem do Modelo-Lógico](XXXXX)<br/>
+[Link da imagem do Modelo-Conceitual](XXXX) <br/>
+[Link da imagem do Modelo-Lógico](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-L%C3%B3gico.jpeg)<br/>
 [Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
