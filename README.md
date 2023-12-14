@@ -2,19 +2,6 @@
 
 Trabalho que visa desenvolver o back-end do nosso projeto AdivinheSô.
 
-**Questões a serem vistas:**
-perguntar arthur sobre o patch de partida, ver os XXXX;
-foreignkey(id usuario) deve ser uma entidade?
-User no router de partida, tem?
-
-
-table de partida deu systex error;
-
-Não esquece de por os dados de acesso para cada tipo de usuario ao entregar o back-end final no classroom(admin, usuario);
-modelo-lógico e consertar conceitual;
-
-Toda vez que for adicionar uma nova entidade no backend deve-se modificar o db/index.js e adicionar ela no /routes e por no index de src;
-
 ## Integrantes
 
 - [Daví Lucas Antunes Neves](https://github.com/Davilucasanteves)
@@ -33,7 +20,7 @@ Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a 
 
 **Links**
 
-[Link da imagem do Modelo-Conceitual](XXXX) <br/>
+[Link da imagem do Modelo-Conceitual](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-Conceitual.png) <br/>
 [Link da imagem do Modelo-Lógico](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/Modelo-L%C3%B3gico.jpeg)<br/>
 [Link do arquivo DDL](https://github.com/Davilucasanteves/back-end-tf-web/blob/main/src/db/DDL.sql)
 
@@ -268,8 +255,10 @@ Descrição: Cadastra uma nova partida.
 
 Body:
 {
-  "quantidadeDeRodadas": "XXX",
-  "vencedor": "XXX"
+  "id": 2,
+  "quantidadeDeRodadas": 6,
+  "vencedor": "Beltrano",
+  "usuario_id": 3
 }
 
 <br/>
@@ -301,22 +290,6 @@ Body: não há body nesse caso.
 Descrição: Deleta uma partida.
 
 Body: não há body nesse caso.
-
-<br/>
-
-- **Atualizar dados de uma partida**:
-
-[PATCH] /partida
-
-Descrição: Modifica dados de uma partida.
-OBS: ele é em caso de os dados da partida serem armazenados no bd durante a partida.
-
-Body:
-{
-  "id": "1",
-  "quantidadeDeRodadas": "XXX",
-  "vencedor": "XXX"
-}
 
 <br/>
 

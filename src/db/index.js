@@ -114,6 +114,14 @@ async function autenticarAdmin(email, senha) {
 //Partida-->
 
 
+//bd.js
+async function insertPartida(data) {         //cadastrar
+  const client = await connect();
+  const query = "INSERT INTO partida (id, vencedor, usuario_id, quantidadeDeRodadas) VALUES ($1,$2, $3, $4) ";
+  const partida = [data.id, data.vencedor, data.usuario_id, data.quantidadeDeRodadas];
+  await client.query(query, partida);
+}
+
 async function selectPartidas() {         
   const client = await connect();
   const res = await client.query("SELECT * FROM partida");
@@ -130,27 +138,10 @@ async function selectPartida(id) {
 }
 
 //bd.js
-async function insertPartida(data) {         //cadastrar
-  const client = await connect();
-  const query = "INSERT INTO partida (quantidadeDeRodadas, vencedor) VALUES ($1,$2) ";
-  const partida = [data.quantidadeDeRodadas, data.vencedor];
-  await client.query(query, partida);
-}
-
-//bd.js
 async function deletePartida(id) {      
   const client = await connect();
   const query = "DELETE FROM partida WHERE id = $1";
   await client.query(query, [id]);
 }
 
-//bd.js
-async function updatePartida(data) {            
-  const client = await connect();
-  const query =
-    "UPDATE partida SET quantidadeDeRodadas = $1, vencedor = $2 WHERE id = $3";
-  const partida = [data.quantidadeDeRodadas, data.vencedor, data.id];
-  await client.query(query, partida);
-}
-
-export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario, selectAdmins, selectAdmin, insertAdmin, deleteAdmin, updateAdmin, autenticarAdmin,selectPartidas, selectPartida, insertPartida, deletePartida, updatePartida };
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario, selectAdmins, selectAdmin, insertAdmin, deleteAdmin, updateAdmin, autenticarAdmin,selectPartidas, selectPartida, insertPartida, deletePartida };
