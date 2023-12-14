@@ -12,6 +12,6 @@ CREATE TABLE partida (
 
 Não esquece de por os dados de acesso para cada tipo de usuario ao entregar o back-end final no classroom(admin, usuario);
 
-Testar a auntenticação;
+Testar a auntenticação; Ver se a entidade partida exije x-acsses/token;
 
 Toda vez que for adicionar uma nova entidade no backend deve-se modificar o db/index.js e adicionar ela no /routes e por no index de src;
