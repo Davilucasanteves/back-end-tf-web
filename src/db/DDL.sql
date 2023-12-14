@@ -12,3 +12,10 @@ CREATE TABLE admin (
 	email VARCHAR ( 255 ) UNIQUE NOT NULL
 );
 
+CREATE TABLE partida (
+	id serial PRIMARY KEY,
+	vencedor varchar (255) not null,
+	usuario_id not null,
+	quantidaDeRodadas not null,
+	FOREIGN KEY (usuario_id) REFERENCES usuario (id) on update cascade on delete cascade
+);

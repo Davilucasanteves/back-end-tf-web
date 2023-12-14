@@ -255,7 +255,6 @@ Descrição: Cadastra uma nova partida.
 
 Body:
 {
-  "id": 2,
   "quantidadeDeRodadas": 6,
   "vencedor": "Beltrano",
   "usuario_id": 3

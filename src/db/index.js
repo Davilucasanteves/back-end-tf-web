@@ -115,10 +115,10 @@ async function autenticarAdmin(email, senha) {
 
 
 //bd.js
-async function insertPartida(data) {         //cadastrar
+async function insertPartida(data) {         
   const client = await connect();
-  const query = "INSERT INTO partida (id, vencedor, usuario_id, quantidadeDeRodadas) VALUES ($1,$2, $3, $4) ";
-  const partida = [data.id, data.vencedor, data.usuario_id, data.quantidadeDeRodadas];
+  const query = "INSERT INTO partida (vencedor, usuario_id, quantidadeDeRodadas) VALUES ($1,$2, $3) ";
+  const partida = [data.vencedor, data.usuario_id, data.quantidadeDeRodadas];
   await client.query(query, partida);
 }
 
@@ -144,4 +144,4 @@ async function deletePartida(id) {
   await client.query(query, [id]);
 }
 
-export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario, selectAdmins, selectAdmin, insertAdmin, deleteAdmin, updateAdmin, autenticarAdmin,selectPartidas, selectPartida, insertPartida, deletePartida };
+export { selectUsuarios, selectUsuario, insertUsuario, deleteUsuario, updateUsuario, autenticarUsuario, selectAdmins, selectAdmin, insertAdmin, deleteAdmin, updateAdmin, autenticarAdmin, selectPartidas, selectPartida, insertPartida, deletePartida };
