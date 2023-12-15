@@ -5,7 +5,7 @@ import { autenticarAdmin } from "../db/index.js";
 
 const router = Router();
 
-router.post("/login", async (req, res) => {
+router.post("/usuario/login", async (req, res) => {
   console.log("Rota POST /login solicitada");
   try {
     const usuario = await autenticarUsuario(req.body.email, req.body.senha);
@@ -20,7 +20,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.post("/login", async (req, res) => {
+router.post("/admin/login", async (req, res) => {
   console.log("Rota POST /login solicitada");
   try {
     const admin = await autenticarAdmin(req.body.email, req.body.senha);

@@ -31,13 +31,13 @@ Para realizarmos o desenvolvimento do banco de dados e disponibilizá-lo para a 
 
 ### - Funções de Usuário:
 
+**URL API: https://back-end-tf-web.vercel.app**
+
 - **Cadastrar novo usuário**:
 
+[POST] /usuario
+
 Descrição: Insere um novo usuário no banco de dados.
-
-Endpoint: https://back-end-tf-web.vercel.app/usuario
-
-Tipo de requisição: POST
 
 Body:
 {
@@ -51,11 +51,9 @@ Body:
 
 - **Listar todos os usuários e as suas respectivas informações**:
 
+[GET] /usuarios
+
 Descrição: Lista todos os usuários e suas respectivas informações.
-
-Endpoint: https://back-end-tf-web.vercel.app/usuarios
-
-Tipo de requisição: GET
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -66,11 +64,9 @@ Body: nesse caso não há body
 
 - **Listar as informações de apenas um usuário**:
 
+[GET] /usuario/:id
+
 Descrição: Lista as informações do usuário requisitado.
-
-Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
-
-Tipo de requisição: GET
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -81,11 +77,9 @@ Body: nesse caso não há body
 
 - **Alterar as informações de um usuário identificado**:
 
+[PUT] /usuario
+
 Descrição: Modifica informações de um usuário específico.
-
-Endpoint: https://back-end-tf-web.vercel.app/usuario
-
-Tipo de requisição: PATCH
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -102,11 +96,9 @@ Body:
 
 - **Excluir as informações de um usuário identificado**:
 
+[DELETE] /usuario/:id
+
 Descrição: Exclui as informações de um certo usuário.
-
-Endpoint: https://back-end-tf-web.vercel.app/usuario/:id
-
-Tipo de requisição: DELETE
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -116,11 +108,9 @@ Body: não há body nesse caso.
 
 - **Autenticar o usuário**: 
 
+[POST] /usuario/login
+
 Descrição: Verifica se realmente é o usuário que está usando tal aplicação.
-
-Endpoint: https://back-end-tf-web.vercel.app/login
-
-Tipo de requisição: POST
 
 Observações: É necessário que o usuário esteja cadastrado.
 
@@ -138,13 +128,13 @@ Body:
 
 ### - Funções de Admin:
 
+**URL API: https://back-end-tf-web.vercel.app**
+
 - **Cadastrar novo admin**:
 
+[POST] /admin
+
 Descrição: Insere um novo admin no banco de dados.
-
-Endpoint: https://back-end-tf-web.vercel.app/admin
-
-Tipo de requisição: POST
 
 Body:
 {
@@ -158,11 +148,9 @@ Body:
 
 - **Listar todos os admins e as suas respectivas informações**:
 
+[GET] /admins
+
 Descrição: Lista todos os admins e suas respectivas informações.
-
-Endpoint: https://back-end-tf-web.vercel.app/admins
-
-Tipo de requisição: GET
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -173,11 +161,9 @@ Body: nesse caso não há body
 
 - **Listar as informações de apenas um admin**:
 
+[GET] /admin/:id
+
 Descrição: Lista as informações de um certo admin.
-
-Endpoint: https://back-end-tf-web.vercel.app/admin/:id
-
-Tipo de requisição: GET
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -188,11 +174,9 @@ Body: nesse caso não há body
 
 - **Alterar as informações de um admin identificado**:
 
+[PUT] /admin
+
 Descrição:  Modifica informações de um admin específico.
-
-Endpoint: https://back-end-tf-web.vercel.app/admin
-
-Tipo de requisição: PATCH
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -208,11 +192,9 @@ Body:
 
 - **Excluir as informações de um admin identificado**:
 
+[DELETE] /admin/:id
+
 Descrição:  Exclui as informações de um certo admin.  
-
-Endpoint: https://back-end-tf-web.vercel.app/admin/:id
-
-Tipo de requisição: DELETE
 
 Observações: É necessário token de acesso via header (x-access-token)
 
@@ -223,13 +205,11 @@ Body: não há body nesse caso.
 
 - **Autenticar o admin**: 
 
+[POST] /admin/login
+
 Descrição:  Verifica se realmente é o admin que está usando tal aplicação.
 
-Endpoint: https://back-end-tf-web.vercel.app/login
-
-Tipo de requisição: POST
-
-Observações: É necessário que o usuário esteja cadastrado.
+Observações: É necessário que o admin esteja cadastrado.
 
 Body: 
 {
@@ -268,6 +248,8 @@ Body:
 
 Descrição: Requisita dados de todas as partidas.
 
+Observações: É necessário token de acesso via header (x-access-token)
+
 Body: não há body nesse caso.
 
 <br/>
@@ -276,7 +258,9 @@ Body: não há body nesse caso.
 
 [GET] /partida/:id
 
-Descrição: Requisita dados de um única partida.
+Descrição: Requisita dados de uma única partida.
+
+Observações: É necessário token de acesso via header (x-access-token)
 
 Body: não há body nesse caso.
 
@@ -287,6 +271,8 @@ Body: não há body nesse caso.
 [DELETE] /partida/:id
 
 Descrição: Deleta uma partida.
+
+Observações: É necessário token de acesso via header (x-access-token)
 
 Body: não há body nesse caso.
 
