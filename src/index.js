@@ -4,12 +4,14 @@ import roteadorUsuario from "./routes/usuario.js"; //importa router
 import roteadorAdmin from "./routes/admin.js"; //importa router
 import roteadorPartida from "./routes/partida.js"; //importa router
 import roteadorLogin from "./routes/login.js";
+import cors from "cors";
 
 dotenv.config();
 
+
 const app = express();              // Instancia o Express
 const port = 3000;                  // Define a porta
-
+app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
